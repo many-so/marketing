@@ -1,8 +1,8 @@
 // Import Popper.js
-import { createPopper } from 'https://unpkg.com/@popperjs/core@2.11.6/dist/esm/popper.min.js';
+import { createPopper } from 'https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js';
 
 // Import Tippy.js
-import tippy from 'https://unpkg.com/tippy.js@6.3.7/dist/tippy-bundle.esm.min.js';
+import tippy from 'https://unpkg.com/tippy.js@6.3.7/dist/tippy-bundle.umd.min.js';
 
 
   function initializeTippy() {
@@ -16,4 +16,8 @@ import tippy from 'https://unpkg.com/tippy.js@6.3.7/dist/tippy-bundle.esm.min.js
     });
   }
 
-  initializeTippy(); // Initialize Tippy.js
+  initializeTippy();
+
+
+  
+
