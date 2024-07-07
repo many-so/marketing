@@ -1,1 +1,61 @@
-testing
+/* tippy.css */
+
+/* Import the Tippy.js core CSS stylesheet */
+@import url('https://unpkg.com/tippy.js@5/dist/tippy.css');
+
+/* Import the Tippy.js light theme CSS stylesheet */
+@import url('https://unpkg.com/tippy.js@6/themes/light.css');
+
+/* Import the Tippy.js subtle scale animation CSS stylesheet */
+@import url('https://unpkg.com/tippy.js@6/animations/scale-subtle.css');
+  
+  
+  * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  color: #1f1f1f;
+  background: #C5D8DE; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  color: #1f1f1f;
+  background: #C5D8DE; /* Gecko Browsers */
+}
+
+
+.text-style-3lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 10 lines of text */
+.text-style-10lines {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
+
+
+
+	.text-wrap-balance { text-wrap: balance }
+
+
+
+
+textarea {
+  resize: none;
+}
+
