@@ -59,3 +59,20 @@ textarea {
   resize: none;
 }
 
+/* Load Shimmer on elements with attribute load=shimmer */
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}
+
+[load="shimmer"] {
+  background: linear-gradient(to right, #ebedf0 10%, #f6f7f9 25%, #ebedf0 50%);
+  background-size: 800px 100px; /* Set the width to a fixed value */
+  position: relative;
+  animation: shimmer 1.2s infinite ease-out;
+}
